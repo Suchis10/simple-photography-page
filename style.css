@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main_box{
+  background-image: url("photo.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+.btn_one{
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+.sidebar{
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+  left: -300px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  transition: all 0.4s linear;
+}
+.logo a{
+  position: absolute;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+#btn_two{
+   color: grey;
+   position: absolute;
+   padding-left: 270px;
+   padding-top: 5px;
+}
+
+#menu{
+  padding-top: 50px;
+  line-height: 50px;
+}
+
+#menu ul li{
+  color: white;
+}
+
+#menu ul li a{
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+#socialmedia{
+  position: absolute;
+  padding-left: 90px;
+}
+
+#socialmedia ul span{
+  padding-bottom: 30px;
+  margin-right: 5px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+#check{
+  display: none;
+}
+
+.sidebar #menu li:hover{
+box-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+#socialmedia ul .material-symbols-outlined:hover{
+  transform: scale(1.5);
+  color: white;
+}
+
+#btn_two .material-symbols-outlined:hover{
+  transform: scale(1.5);
+  color: white;
+}
+
+#check:checked ~ .sidebar{
+  left: 0px;
+}
+
+#check:checked ~ .btn_one span{
+  opacity: 0;
+}
+
+#check:checked ~ .btn_two span{
+  font-size: 700;
+}
